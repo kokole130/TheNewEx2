@@ -101,7 +101,6 @@ void Exit(){
 	}
 }
 
-
 double twoDigitAfterDot(double num){
 		int tmp=num*100;
 		num=tmp;
