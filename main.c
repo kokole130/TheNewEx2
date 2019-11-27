@@ -16,22 +16,14 @@ int main(){
 	double ribit;
 	printf("Transaction type?: ");
 	scanf(" %c", &ch);
-	if(getchar()!='\n'){
-		printf("Illegal input please try again.\n");
-		while((getchar()) != '\n');
-		main();
-	} //Checking if its single char
-
 	switch (ch)
 	{
 	case 'O':
 		printf("Intial deposit?: ");
 		if(scanf("%lf", &amount)==1){
 			open(amount);
-			while((getchar()) != '\n');
 		}
 		else {
-			while((getchar()) != '\n');
 			printf("Illegal input please try again.\n");
 		}
 		break;
@@ -40,10 +32,8 @@ int main(){
 		printf("Account number?: ");
 		if(scanf("%d", &account)==1){
 			myBalance(account);
-			while((getchar()) != '\n');
 		}
 		else {
-			while((getchar()) != '\n');
 			printf("Illegal input please try again.\n");
 		}
 		break;
@@ -55,10 +45,8 @@ int main(){
 		int y=scanf("%lf", &amount);
 		if(y==1 && x==1){
 			inTransaction(amount,account);
-			while((getchar()) != '\n');
 		}
 		else {
-			while((getchar()) != '\n');
 			printf("Illegal input please try again.\n");
 		}
 		break;
@@ -70,10 +58,8 @@ int main(){
 		int b=scanf("%lf", &amount);
 		if(a==1 && b==1){
 			outTransaction(amount,account);
-			while((getchar()) != '\n');
 		}
 		else {
-			while((getchar()) != '\n');
 			printf("Illegal input please try again.\n");
 		}
 		break;
@@ -82,10 +68,8 @@ int main(){
 		printf("Account number?: ");
 		if(scanf("%d", &account)==1){
 			close(account);
-			while((getchar()) != '\n');
 		}
 		else {
-			while((getchar()) != '\n');
 			printf("Illegal input please try again.\n");
 		}
 		break;
@@ -94,10 +78,8 @@ int main(){
 		printf("Interest rate?: ");
 		if(scanf("%lf", &ribit)==1){
 			allRibit(ribit);
-		while((getchar()) != '\n');
 		}
 		else {
-			while((getchar()) != '\n');
 			printf("Illegal input please try again.\n");
 		}
 		break;
