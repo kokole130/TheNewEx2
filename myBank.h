@@ -1,3 +1,4 @@
+extern double bank[2][50];
 void open(double money);
 void myBalance(int acount);
 void inTransaction(double money, int acount);

@@ -2,9 +2,6 @@
 #include <stdio.h>
 
 /*
-~When we the command "while((getchar()) != '\n')",
-we clearing the buffer, inorder not to have unused digits.
-
 ~In every double input im confirming that the user enters,
 only a double number.
  */
